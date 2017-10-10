@@ -40,8 +40,10 @@ Here is the high level approach/algorithm followed in this method:
     * fit a line through the points (`np.polyfit(x,y,1)`) to get the _slope (m)_ and _y-intercept (b)_
     * Use the parameters to draw a line on each side
 3. Return the image with lane-lines drawn on it.
+
+Note: this functionality is divided into two functions. The `draw_lines` method calls `draw_line()` twice 
     
-* `filter_colors(image)`
+* `applyColorFilter(image)`
 This is a simple function which filters the white pixels and yellow pixels from the image and returns the combined image back.
 
 As you go over the subsequent cells in the P1.ipynb file, everything is self explanatory. I have:
