@@ -3,12 +3,12 @@
 
 [//]: # (Image References)
 
-[image1]: ./examples/grayscale.jpg "Grayscale"
-
 
 ### Submission Files/Writeup
 
-You're reading the writeup! and here is a link to my [project code](https://github.com/purnendu23/LaneDetection/blob/master/P1.ipynb) [html] (https://github.com/purnendu23/LaneDetection/blob/master/P1.html)
+You're reading the writeup! and here is a link to my [project code](https://github.com/purnendu23/LaneDetection/blob/master/P1.ipynb) 
+
+[html] ( https://github.com/purnendu23/LaneDetection/blob/master/P1.html )
 
 ---
 
