@@ -38,19 +38,32 @@ Here is the high level approach/algorithm followed in this method:
 2. For each left and right side points:
     * fit a line through the points (`np.polyfit(x,y,1)`) to get the _slope (m)_ and _y-intercept (b)_
     * Use the parameters to draw a line on each side
+3. Return the image with lane-lines drawn on it.
     
+* `filter_colors(image)`
+This is a simple function which filters the white pixels and yellow pixels from the image and returns the combined image back.
 
+As you go over the subsequent cells in the P1.ipynb file, everything is self explanatory. I have:
+
+* Defined the helper functions
+* Built the pipeline using the helper functions
+* Tested the pipeline on a single image and subsequently on all test images.
+* I then test the pipeline on test videos
 
 ### 2. Potential shortcomings in the current pipeline
 
+* A possible shortcoming in the pipeline is updation rate. Sometimes the road curves really fast and the pipeline is not able to update the new lane line as fast as it should.
 
-One potential shortcoming would be what would happen when ... 
+* The line which I draw is a straight line. That means, it is only going to fit the lanes-lines perfectly if it is a staright road. If the road is too curvy the method will definitely not work well.
 
-Another shortcoming could be ...
+* Changing conditions effect image quality
+When weather conditions change during snow, rain or fog or when lighting changes because of shadows from trees, clouds, tunnels etc. it will be harder to distinguish edges.
 
+* We are using a fixed region space to detect the lane lines. This will not work if the camera position is changed.
 
 ### 3. Possible improvements in the pipeline
 
-A possible improvement would be to ...
+* Adapt to image qulaity/ weather conditions:
+We can use Canny Edge detection with adaptive thresholds which are dependent on characteristics of the image like brightness, contrast etc. A potential solution could be to switch to another color space.
 
-Another potential improvement could be to ...
+Different image dimensions could be handled by using relative sizes for the mask instead of absolute pixel values. The bottom of the image could be masked to remove the hood.
