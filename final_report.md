@@ -41,7 +41,7 @@ Here is the high level approach/algorithm followed in this method:
     * Use the parameters to draw a line on each side
 3. Return the image with lane-lines drawn on it.
 
-Note: this functionality is divided into two functions. The `draw_lines` method calls `draw_line()` twice 
+Note: this functionality is divided into two functions. The `draw_lines` method calls `draw_line()` twice to draw each left and right side line of the lane
     
 * `applyColorFilter(image)`
 This is a simple function which filters the white pixels and yellow pixels from the image and returns the combined image back.
