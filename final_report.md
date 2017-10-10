@@ -8,7 +8,7 @@
 
 ### Submission Files/Writeup
 
-You're reading the writeup! and here is a link to my [project code](https://github.com/purnendu23/LaneDetection/blob/master/P1.ipynb)
+You're reading the writeup! and here is a link to my [project code](https://github.com/purnendu23/LaneDetection/blob/master/P1.ipynb) [html] (https://github.com/purnendu23/LaneDetection/blob/master/P1.html)
 
 ---
 
