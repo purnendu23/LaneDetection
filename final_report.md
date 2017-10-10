@@ -66,4 +66,4 @@ When weather conditions change during snow, rain or fog or when lighting changes
 * Adapt to image qulaity/ weather conditions:
 We can use Canny Edge detection with adaptive thresholds which are dependent on characteristics of the image like brightness, contrast etc. A potential solution could be to switch to another color space.
 
-Different image dimensions could be handled by using relative sizes for the mask instead of absolute pixel values. The bottom of the image could be masked to remove the hood.
+* Images with different dimensions can be taken care of by using relative sizes for the mask instead of absolute pixel values.
